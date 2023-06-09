@@ -1,15 +1,15 @@
 <template>
   <div id="app">
-    <SignUp />
+    <Home />
   </div>
 </template>
 
 <script>
-import SignUp from './components/SignUp.vue';
+import Home from './views/Home.vue';
 
 export default {
   components: {
-    SignUp,
+    Home,
   },
 };
 </script>
