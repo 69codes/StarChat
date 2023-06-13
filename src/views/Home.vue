@@ -1,6 +1,7 @@
 <template>
     <div class="home">
       <Header />
+      <div class="hero"> Chat with your favorite celebrities</div>
     </div>
   </template>
   
@@ -15,7 +16,11 @@
   </script>
   
   <style scoped> 
-
+  .hero {
+    font-size: xx-large;
+    color: blue;
+    margin-top: 20px 20px;
+  }
 
   </style>
   
