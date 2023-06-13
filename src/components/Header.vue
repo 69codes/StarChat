@@ -1,41 +1,57 @@
-<template>
-  <header class="header">
-    <nav class="navbar">
-      <div class="logo">My Website</div>
-      <div class="links">
-        <a href="#">Home</a>
-        <a href="#">About</a>
-        <a href="#">Services</a>
-        <a href="#">Contact</a>
-      </div>
-      <button class="toggle-button" @click="toggleMenu">
-        <span class="bar"></span>
-        <span class="bar"></span>
-        <span class="bar"></span>
-      </button>
-    </nav>
-    <div v-show="showMenu" class="mobile-menu">
-      <a href="#">Home</a>
-      <a href="#">About</a>
-      <a href="#">Services</a>
-      <a href="#">Contact</a>
-    </div>
-  </header>
-</template>
-
 <script>
-export default {
-  data() {
-    return {
-      showMenu: false,
-    };
-  },
-  methods: {
-    toggleMenu() {
-      this.showMenu = !this.showMenu;
-    },
-  },
-};
+import { RouterLink } from 'vue-router'
 </script>
 
+<template>
+  <body>
+      <!-- Navbar -->
+      <header>
+          <h1 id="nav-title">Star Chat</h1>
+          <nav>
+              <ul>
+                  <li><RouterLink to="/">Home</RouterLink></li>
+                  <li><RouterLink to="/about">about</RouterLink></li>
+                  <li><RouterLink to="/prices">Prices</RouterLink></li>
+              </ul>
+          </nav>
+      </header>
+  </body>
+  </template>
 
+<style>
+/* Global */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: justify-content;
+    align-items: center;
+    padding: 20px 50px;
+    box-shadow: 0 1px 8px #ddd;
+    width: auto;
+}
+
+#nav-title {
+    margin-right: auto;
+    font-size: 1.5em;
+}
+
+header li {
+    list-style: none;
+    display: inline-block;
+    padding: 0 20px;
+}
+
+header a {
+    text-decoration: none;
+    color: #555;
+    transition: all 0.3s ease 0s;
+}
+
+
+</style>
