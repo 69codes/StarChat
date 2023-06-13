@@ -1,7 +1,20 @@
 <template>
     <div class="home">
       <Header />
-      <div class="hero"> Chat with your favorite celebrities</div>
+      <!--The whole page would be in a flex container-->
+      <div class="Flex_container"> 
+        <div class="flex_one">
+
+        </div>
+        <div class="flex_two">
+
+        </div>
+        <div class="flex_three">
+
+
+        </div>
+       
+      </div>
     </div>
   </template>
   
@@ -16,11 +29,28 @@
   </script>
   
   <style scoped> 
-  .hero {
-    font-size: xx-large;
-    color: blue;
-    margin-top: 20px 20px;
+
+
+  /* All the flex containers would be inside this one */
+  .Flex_container {
+    display: flex;
+    flex-direction: column;
   }
 
+  /* We would be having three main flex containers in the flex containers, which would dictate the whole page */
+  .flex_one {
+    height: 150px;
+    background-color: aqua;
+  }
+
+  .flex_two {
+    height: 150px;
+    background-color: red;
+  }
+
+  .flex_three {
+    height: 150px;
+    background-color: burlywood;
+  }
   </style>
   
