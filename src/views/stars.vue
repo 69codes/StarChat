@@ -1,4 +1,6 @@
 <template>
+
+
     <div class="home">
       <Header />
     </div>
@@ -13,9 +15,14 @@
     <div class="stars">
 
     </div>
+
+
   </template>
   
+
   <script>
+
+
   import Header from '../components/Header.vue';
   
   export default {

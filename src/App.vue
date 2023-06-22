@@ -6,6 +6,7 @@
 
 <script>
 import Home from './views/Home.vue';
+import { RouterLink, RouterView } from 'vue-router'
 
 export default {
   components: {
